@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+body{
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 16px;
+}
+
+.card-container{
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+  max-width: 360px;
+  color: rgba(0, 0, 0, 0.87);
+  overflow: hidden;
+}
+
+.card-post{
+  font-size: 10px;
+  width: fit-content;
+  padding: 4px 6px;
+  box-shadow: rgba(6, 6, 6, 0.05) 0px 2px 6px 0px;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.card-info{
+  padding: 8px 6px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.comp-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+}
+
+.comp-position {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.comp-loc {
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.card-salary{
+  font-size: 14px;
+  margin: 8px 0;
+  color: rgb(77, 89, 106);
+  font-family: __LexendFont_7838d2, __LexendFont_Fallback_7838d2;
+  line-height: 1.43;
+}
+
+.cmp-about{
+  margin: 0px;
+    font-family: __LexendFont_7838d2, __LexendFont_Fallback_7838d2;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cmp-about-us{
+  font-family: __LexendFont_7838d2, __LexendFont_Fallback_7838d2;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.cmp-desc{
+  font-weight: 400;
+  white-space: pre-wrap;
+    font-size: 14px;
+}
+
+.cmp-link{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  text-decoration: none;
+  color: #4943da;
+  cursor: pointer;
+    text-decoration: none;
+    font-size: 14px !important;
+    font-weight: 400 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cmp-skills{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+  margin-top: 10px;
+}
+
+.skill-container{
+  margin: 2px 5px 2px 0px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #4943da;
+  background-color: #d9fed3;
+  padding: 2px 7px;
+  border-radius: 50px;
+  max-width: fit-content;
+}
+
+.min-exp{
+  font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    color: #8b8b8b;
+    margin-top: 10px;
+}
+
+.cmp-exp{
+  font-size: 14px;
+    line-height: 1.5;
+}
+
+button{
+  outline: none;
+  border: none;
+}
+
+.btn{
+  -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    border: none;
+}
+
+.apply-btn{
+  width: 100%;
+    background-color: rgb(85, 239, 196);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+    line-height: 1.75;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown-container{
+  display: flex;
+    flex-direction: column;
+    min-height: 38px;
+}
+
+#experience-dropdown{
+  -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+#remote-dropdown{
+  -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+#min-base-pay-dropdown{
+  -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+#company-name-input{
+  -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+.dropdown-wrapper{
+  width: 100%;
+    display: flex;
+    gap: 1rem;
 }
